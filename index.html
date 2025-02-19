@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4: Meal Tax & Tip</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="crt.css" />
+
+    <script defer src="script.js"></script>
+</head>
+
+<body class="crt">
+
+    <body>
+        <div class="bodyContent">
+            <header style="text-align: center">
+                <h1>**** CPAN116 ALGOS - LAB 4 ****</h1>
+                <p aria-label="System RAM info">
+                    Calculating a Meal Tax & Tip & Total
+                </p>
+
+            </header>
+
+            <main>
+                <div>
+                    <h2>Part 1: The Table</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Input</th>
+                                <th>Processing</th>
+                                <th>Output</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Meal Cost</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Calculate Tax Amount</td>
+                                <td>Tax Amount</td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td>Calculate Tip Amount</td>
+                                <td>Tip Amount</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Calculate Gross Amount</td>
+                                <td>Gross Amount</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h2>Part 2: The Calculation</h2>
+                    <p>Please enter the cost of your meal.</p>
+
+                    <div class="h_container">
+                        <p>Meal Cost</p>
+                        <input id="task_1_input" type="string">
+
+                        <button id='task_1_butt' type="button">
+                            Calculate
+                        </button>
+                    </div>
+
+                    <pre id="task_1_output"></pre>
+                </div>
+
+            </main>
+        </div>
+
+        <script>
+            // MANUALLY REG THE LOGIC TO THE BUTTON
+            document.getElementById("task_1_butt").addEventListener("click", () => { do_task(1, document.getElementById("task_1_input").value, null, document.getElementById("task_1_output")) });            
+        </script>
+    </body>
+
+</html>
